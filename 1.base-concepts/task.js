@@ -3,7 +3,7 @@ function solveEquation(a, b, c) {
     let arr = [];
     let d;
     let k;
-    d = b**-4*a*c;
+    d = Math.pow(b,2)-4*a*c;
     if (d === 0) {
        k = -b/(2*a);
        arr.push(k);
