@@ -29,7 +29,7 @@ function calculateTotalMortgage(percent, contribution, amount, countMonths) {
   } else if(isNaN(countMonths)) {
     return false;
   } else {
-    op = (countMonths * S * (P + (P / (Math.pow((1 + P),countMonths) - 1)))).toFixed(2);
+    op = +(countMonths * S * (P + (P / (Math.pow((1 + P),countMonths) - 1)))).toFixed(2);
     return op;
   }
 }
