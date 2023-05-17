@@ -13,7 +13,7 @@ Student.prototype.addMarks = function(...marks) {
 	if (this.hasOwnProperty('marks') === false) {
 		return console.log("Студент отчислен");
 	} else {
-		this.marks = marks;
+		this.marks.push(...marks);
 	}
 }
 
