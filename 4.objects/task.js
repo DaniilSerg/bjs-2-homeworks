@@ -36,17 +36,3 @@ Student.prototype.exclude = function(reason) {
 
 }
 
-let student1 = new Student("sergey", "men", 35);
-student1.setSubject("wwww");
-console.log(student1);
-
-let student2 = new Student("ekaterina", "women", 18);
-student2.addMarks(5, 3, 4, 3);
-console.log(student2);
-
-let student3 = new Student("andrey", "men", 19);
-student3.addMarks(2, 2, 2, 2);
-student3.getAverage();
-student3.exclude("Плохая успеваемость")
-console.log(student3);
-console.log(student3.marks);
