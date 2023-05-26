@@ -22,7 +22,7 @@ class Triangle {
         this.two = two;
         this.three = three
         const res = this.one + this.two
-        if (res < this.three) {
+        if (res < this.three || this.one > this.three || this.two > this.three) {
             throw new Error('Треугольник с такими сторонами не существует');
         }
     }
